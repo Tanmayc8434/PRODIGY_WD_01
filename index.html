@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Landing page</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"><i class="fa-solid fa-spa"></i> HORIZON STAYS</a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Membership Program</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="slider">
+        <div class="container">
+          <div class="slides">
+            <img class="slide" src="1.jpg" alt="Image 1" />
+            <img class="slide" src="2.jpg" alt="Image 2" />
+            <img class="slide" src="3.jpg" alt="Image 3" />
+            <img class="slide" src="4.jpg" alt="Image 4" />
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="search-bar">
+          <div class="destination">
+            <label for="ss" id="label"
+              ><i class="fas fa-map-marker-alt"></i> Destination</label
+            >
+            <br />
+            <input type="search" placeholder="Where can we take you?" />
+          </div>
+
+          <div class="dotted-line"></div>
+
+          <div class="check-in">
+            <p><i class="fa-solid fa-calendar-days"></i> Dates</p>
+            <p id="chk">Check-in-Check-out</p>
+          </div>
+
+          <div class="btn-div">
+            <button
+              class="search-btn"
+              onclick="this.classList.toggle('clicked')"
+            >
+              Find hotels
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondpage">
+        <div class="heading">
+          <h1>Authentic Indigenous Luxury Experiences</h1>
+        </div>
+
+        <div class="cover">
+          <div class="box">
+            <img src="responsible-luxury.png" alt="" />
+            <h2>RESPONSIBLE LUXURY</h2>
+            <p>
+              Delivering world-class luxury experiences which address the needs
+              of wellbeing and safety through responsible practices which are in
+              harmony with the environment and society.
+            </p>
+          </div>
+
+          <div class="box">
+            <img src="dining.png" alt="" />
+            <h2>SIGNATURE DINING</h2>
+            <p>
+              A globally recognized repertoire of Indian and International
+              culinary brands. Our culinary masters continuously strive to
+              unearth lost recipes and resurrect secret gems from traditional
+              kitchens for today’s connoisseur.
+            </p>
+          </div>
+
+          <div class="box">
+            <img src="wellness.png" alt="" />
+            <h2>WELLBEING</h2>
+            <p>
+              A leading destination for holistic health and wellness, each hotel
+              offers a range of comprehensive services that enhance every aspect
+              of the stay - from luxurious treatments to indoor air quality
+              initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; 2023 HORIZON STAYS. All Rights Reserved.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
